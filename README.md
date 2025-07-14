@@ -1,1 +1,1 @@
-https://github.com/ligsof1/one-tebe-nado-fd
+git@github.com:ligsof1/ono-tebe-nado-fd.git
