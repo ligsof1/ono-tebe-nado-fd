@@ -335,7 +335,7 @@ footer {
   padding-bottom: 2px;
 }
 
-.nav--footer__underline a{
+.nav--footer__underline a {
   text-decoration: underline;
   text-underline-position: under;
 }
