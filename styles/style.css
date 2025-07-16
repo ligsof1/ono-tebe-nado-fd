@@ -1,12 +1,11 @@
 header {
- min-height: 293px;
  display: grid;
  grid-template-columns: 1fr min-content 1fr;
  align-items:center;
  justify-items: center;
  margin: 0 auto;
  font-size: 18px;
- font-family: Raleway;
+ padding: 90px 0px 94px 1px;
 }
 
 .menu--list .menu--list__text {
@@ -14,23 +13,20 @@ header {
   text-decoration: none;
 }
 
-nav ul {
-  display: flex;
-  list-style: circle;
-}
-
-
 .menu li {
-  margin: -5px 10px 0 23px;
+  margin: 0px 9px 1 15px;
   text-decoration: underline;
   text-underline-position: under;
 }
 
 .menu--list {
-  padding: 0px 9px 1px 2px;
+  padding: 0px 3px 2px 9px;
+  display: flex;
+  list-style: circle;
+  gap: 33px;
 }
 
-.menu--list li a {
+.menu--list a {
   color: #000000;
   text-decoration: none;
 }
@@ -42,8 +38,8 @@ nav ul {
 address {
   list-style: none;
   font-style: normal;
-  line-height: 23px;
-  margin: 0px 0px 5px 112px;
+  line-height: 23.5px;
+  margin: 0px 0px 0px 112px;
   width: 208px;
 }
 
@@ -55,10 +51,6 @@ address p {
   padding-top: 2px;
 }
 
-.address--list__decoration {
-  border-bottom: none !important;
-}
-
 .address--underline {
   text-decoration: underline;
   text-underline-position: under;
@@ -66,69 +58,62 @@ address p {
 
 .cover {
   min-height: 757px;
-  background: url(../images/cover.jpg);
-  color: rgba(255, 255, 255, 1);
-  background-position: top 1px right -133px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.cover::before {
-  content: '';
-  display: block;
-  max-width: 1100px;
-  height: 757px;
-  position: absolute;
-  top: 294px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .6);
-  margin: 0 auto;
-}
-
-.cover h1 {
+  background: url(../images/cover.jpg) center/cover no-repeat;
+  color: #fff;
   position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover__title {
+  position: relative;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
+  z-index: 1;
+  padding: 165px 0 0 50px;
+  margin: 0;
 }
 
-.cover--text__1 {
-  padding: 165px 0px 0px 50px;
+.cover__line {
+  display: block;
 }
 
-.cover--text__2 {
-  padding: 20px 0px 0px 380.5px;
+.cover__line_mid {
+  padding: 20px 0 20px 330.5px;
 }
 
-.cover--text__3 {
-  padding: 20px 0px 0px 664px;
+.cover__line_bot {
+  padding-left: 614px;
 }
+
 .description {
-  display: flex;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 49px;
 }
 
 .description p {
   font-size: 22px;
   text-transform: uppercase;
-  padding: 119px 0 0 50px;
   word-spacing: 18.5px;
+  margin: 0;
 }
 
 .description button {
   height: 51px;
   width: 256px;
-  margin: 106px 0 0 108px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   font-size: 22px;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 255, 255, 1);
-  color: #fff;
+  border: 1px solid #fff;
+  color: currentColor;
+  cursor: pointer;
 }
 
 .lots {
@@ -145,160 +130,136 @@ address p {
 .lots--list {
   display: flex;
   flex-wrap: wrap;
-  list-style:none;
-  padding: 0 24px 0 24px;
+  list-style: none;
+  padding: 0 24px;
+  gap: 25px;
+  margin: 0 auto;
 }
 
 .lots--list li {
-  flex-grow: 1;
-  flex-basis: 334px;
+  flex: 1 1 334px;
   min-width: 334px;
 }
 
 .lots--list a {
   text-decoration: none;
+  display: block;
+  height: 100%;
 }
 
-.lots--list h3 {
+.lots--list__container {
+  height: 596px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 47px 40px 47px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.lots--list__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0; 
+}
+
+.lots--list__container h3 {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
   text-decoration: underline;
   text-underline-position: under;
   text-transform: uppercase;
-  text-decoration-thickness:1px;
-}
-
-.lots--list p {
-  font-size: 20px;
-}
-
-.lots ul {
-  gap: 25px;
-  margin: 0 auto;
-}
-
-.lots--list__container {
-  height: 596px;
+  text-decoration-thickness: 1px;
+  margin: 0;
   position: relative;
-}
-
-.lots--list__background1 {
-  background: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.lots--list__background2 {
-  background: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.lots--list__background3 {
-  background: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.lots--list__container h3 {
-  padding: 47px 40px 279px 40px;
-  z-index: 1;
-  position: relative;
-}
-
-.lots--list__background2 h3 {
-  padding-bottom: 37px;
-}
-
-.lots--list__background3 h3 {
-  padding-bottom: 133px;
+  z-index: 1; 
 }
 
 .lots--list__container p {
-  padding: 0 40px 48px 40px;
+  font-size: 20px;
   color: #fff;
-  z-index: 1;
+  margin: 0;
   position: relative;
+  z-index: 1; 
 }
 
-.lots--list__SeeMore {
+.lots--list__background1 {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots--list__background2 {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots--list__background3 {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots-list__expand {
   font-size: 20px;
   padding: 31px 0 119px 64px;
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-thickness: 1px;
-  margin: 0px;
-}
-
-.lots--list__container::before {
-  content: '';
-  display: block;
-  max-width: 1100px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .6);
-  margin: 0 auto;
+  text-underline-offset: 1px;
 }
 
 .about {
   display: flex;
   padding: 0 0 180px 0;
+  gap: 25px; 
 }
 
-.about--column h1 {
+.about--column {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  flex-direction: column; 
+  max-width: 734px;
+  padding: 0 0 0 46px; 
+}
+
+.about--column h2 {
   font-size: 40px;
   text-transform: uppercase;
-  padding: 135px 0px 100px 0px;
+  padding: 135px 0 76px 0; 
+  margin: 0;
 }
 
 .about--logo {
   background-color: #000000;
-  height: 240px;
   width: 240px;
+  height: 240px;
+  min-width: 240px; 
   border-radius: 50%;
   display: flex;
   align-items: center;
-  margin: 35px 0px 0px 72px;
   justify-content: center;
+  margin: 35px 0px 0px 72px;
 }
 
 .about--logo img {
   width: 148px;
 }
 
-.about--column {
-  margin: 0px;
-  padding-left: 71px;
-  width: 693px;
-}
-
-.about--column__text {
+.about--column p {
   font-size: 20px;
-  width: 693px;
-}
-
-.about--column--text__top {
-  width: 687px;
-}
-
-.about--column--text__bottom {
-  padding-top: 24px;
-  width: 693px;
+  flex-direction: column; 
 }
 
 footer {
   display: flex;
   font-size: 18px;
   justify-content: space-between;
-  height: 180px;
+  padding-bottom: 90px;
 }
 
 .address--footer {
@@ -307,12 +268,17 @@ footer {
   width: 316px;
 }
 
+.address--footer li {
+  padding-bottom:2px;
+}
+
 .address--footer ul {
   list-style:none;
 }
 
 .nav--footer {
-  padding: 1px 24px 0 0;
+  padding: 1px 25px 0px 0px;
+  text-align: center;
 }
 
 .nav--footer ul {
@@ -340,7 +306,7 @@ footer {
   text-underline-position: under;
 }
 
-.nav--footer__none a {
+.footer__nav-link--active a {
   text-decoration: none;
 }
 
