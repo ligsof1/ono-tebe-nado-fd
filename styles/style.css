@@ -167,7 +167,7 @@ address p {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 0; 
+  z-index: 0;
 }
 
 .lots--list__container h3 {
@@ -180,7 +180,7 @@ address p {
   text-decoration-thickness: 1px;
   margin: 0;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .lots--list__container p {
@@ -188,7 +188,7 @@ address p {
   color: #fff;
   margin: 0;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .lots--list__background1 {
@@ -215,7 +215,7 @@ address p {
 .about {
   display: flex;
   padding: 0 0 180px 0;
-  gap: 25px; 
+  gap: 25px;
 }
 
 .about--column {
@@ -224,7 +224,7 @@ address p {
   flex: 1;
   flex-direction: column; 
   max-width: 734px;
-  padding: 0 0 0 46px; 
+  padding: 0 0 0 46px;
 }
 
 .about--column h2 {
@@ -252,7 +252,7 @@ address p {
 
 .about--column p {
   font-size: 20px;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 footer {
