@@ -1,15 +1,15 @@
 header {
- display: grid;
- grid-template-columns: 1fr min-content 1fr;
- align-items:center;
- justify-items: center;
- margin: 0 auto;
- font-size: 18px;
- padding: 90px 0px 94px 1px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 90px 0px 94px 1px;
 }
 
 .menu--list .menu--list__text {
-  list-style:none;
+  list-style: none;
   text-decoration: none;
 }
 
@@ -205,7 +205,7 @@ address p {
   background-image: url(../images/card-lot-03.jpg);
 }
 
-.lots--list + a {
+.lots-list__toggle {
   font-size: 20px;
   padding: 31px 0 119px 64px;
   text-decoration: underline;
@@ -271,11 +271,11 @@ footer {
 }
 
 .address--footer li {
-  padding-bottom:2px;
+  padding-bottom: 2px;
 }
 
 .address--footer ul {
-  list-style:none;
+  list-style: none;
 }
 
 .nav--footer {
@@ -284,7 +284,7 @@ footer {
 }
 
 .nav--footer ul {
-  list-style:none;
+  list-style: none;
   flex-direction: column;
   align-items: center;
 }
@@ -292,7 +292,7 @@ footer {
 .social {
   display: flex;
   flex-direction: row;
-  list-style:none;
+  list-style: none;
   gap: 48px;
   padding-right: 50px;
 }
